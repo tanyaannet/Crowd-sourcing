@@ -1,0 +1,97 @@
+<!--<html>-->
+<!--<head></head>-->
+<!--    <body>-->
+{% extends 'home.html' %}
+{% block body %}
+
+<style>
+  .button {
+  background-color: #009970;;
+  padding: 12px 28px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  }
+  .button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .tables {
+  border:1px solid #ddd;
+  border-collapse: collapse;
+
+}
+
+.tables td, .tables th {
+  border:none;
+  padding: 15px;
+  color:#000000
+}
+
+.tables th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #CCFFFF;
+  color:#000000;
+}
+</style>
+
+
+
+	<form name="form1" method="post" action="/regstudent">
+      <center>
+          <div align="center">
+  <p>&nbsp;</p>
+  <p><strong><h1>STUDENT REGISTRATION</h1></strong></p>
+  <p>&nbsp;</p>
+<div style="overflow-x:auto;">
+    <p></p>
+    <table border="2" class="tables">
+        <tbody>
+
+    <tr>
+      <td>NAME :</td>
+        <td><label for="textfield"></label>&nbsp;&nbsp;
+      <input type="text" name="textfield" required pattern="[A-Z a-z]{3,20}"/></td>
+    </tr>
+    <tr>
+      <td>DATE OF BIRTH :&nbsp;</td>
+      <td><label for="date" >&nbsp;</label>
+        <input type="date" name="date" id="date" required/></td>
+    </tr>
+			<tr>
+      <td>DEPARTEMENT:&nbsp;</td>
+      <td><label for="select">&nbsp;</label>
+        <select name="cars" id="cars">
+  <option value="COMPUTER">COMPUTER</option>
+  <option value="COMMERCE">COMMERCE</option>
+  <option value="BUSINESS">BUSINESS</option>
+  <option value="MASS COMMUNICATION">MASS COMMUNICATION</option>
+</select>
+			  </td>
+    </tr>
+			<tr>
+      <td>USER NAME :</td>
+      <td><input type="text" name="textfield1" required pattern="[a-z 0-9 . _ % + -]+@[a-z 0-9 . -]+\.[a-z]{2,3}$"/></td>
+    </tr>
+			<tr>
+      <td>PASSWORD :</td>
+      <td><input type="text" name="textfield2" required pattern="[a-z A-Z 0-9 @ .]{5,16}"/></td>
+				
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" id="submit" value="Sign Up" class="button"></td>
+    </tr>
+
+		</tbody>
+</table>
+</center>
+</form>
+</div>
+</div>
+{% endblock %}
+
+<!--      </body>-->
+<!--	</html>-->

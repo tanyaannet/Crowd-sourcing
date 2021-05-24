@@ -1,0 +1,106 @@
+<!--<html>-->
+<!--<head></head>-->
+{% extends 'homea.html' %}
+{% block body %}
+
+<style>
+  .button {
+  background-color: #009970;;
+  padding: 12px 28px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  }
+  .button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .tables {
+  border:1px solid #ddd;
+  border-collapse: collapse;
+
+}
+
+.tables td, .tables th {
+  border:none;
+  padding: 15px;
+}
+
+.tables th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #009970;
+  color: white;
+}
+</style>
+
+
+
+
+	<form name="form1" method="post" action="/addevent">
+
+<center>
+    <div align="center">
+  <p>&nbsp;</p>
+  <p><strong><h1>EVENTS</h1></strong></p>
+  <p>&nbsp;</p>
+<div style="overflow-x:auto;">
+    <p></p>
+    <table border="2" class="tables">
+        <tbody>
+    <tr>
+      <td>EVENT NAME</td>
+      <td><label for="textfield">&nbsp;</label>
+        <input type="text" name="textfield" id="textfield" required pattern="[A-Z a-z]{3,20}"/>
+        &nbsp;</td>
+    </tr>
+			 <tr>
+      <td>MAX PARTICIPANTS&nbsp;</td>
+      <td><label for="textfield2">&nbsp;</label>
+        <input type="text" name="textfield2" id="textfield2" required pattern="[0-9]{1,10}"/>
+        &nbsp;</td>
+    </tr>
+			 <tr>
+      <td>EVENT DATE&nbsp;</td>
+      <td><label for="date">&nbsp;</label>
+        <input type="date" name="date" id="date" required/>
+        &nbsp;</td>
+    </tr> <tr>
+      <td>VENUE&nbsp;</td>
+      <td><label for="textfield3">&nbsp;</label>
+        <input type="text" name="textfield3" id="textfield3" required pattern="[A-Z a-z]{3,20}">
+        &nbsp;</td>
+    </tr> <tr>
+
+        <tr>
+      <td>LAST REG DATE&nbsp;</td>
+      <td><label for="date">&nbsp;</label>
+        <input type="date" name="ldate" id="ldate" required/>
+        &nbsp;</td>
+    </tr>
+
+    </tr>
+      <td>DECRIPTION OF EVENT&nbsp;</td>
+      <td><label for="textfield4">&nbsp;</label>
+        <input type="text" name="textfield4" id="textfield4" required/>
+        &nbsp;</td>
+			
+    </tr>
+			<tr>
+      <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" id="submit" value="Add EVENT" class="button"></td>
+    </tr>
+			
+    
+      
+   
+  </tbody>
+		  
+</table>
+</center>
+</form>
+</div>
+</div>
+{% endblock %}
+<!--	</html>-->

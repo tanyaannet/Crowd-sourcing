@@ -1,0 +1,194 @@
+
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8">-->
+<!--<title>HOME</title>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--	<center>-->
+
+<!--		<a href="/vieweprofile">PROFILE</a><!doctype html>&nbsp &nbsp-->
+<!--		<a href="/evlist">EVENTS</a><!doctype html>&nbsp &nbsp-->
+<!--		<a href="/logout">LOGOUT</a><!doctype html>-->
+<!--</center>-->
+<!--	</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<title>Event - Landing Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="">
+
+		<!--== CSS Files ==-->
+		<link href="../static/css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="../static/vendor/css/style.css" rel="stylesheet" media="screen">
+		<link href="../static/vendor/css/font-awesome.css" rel="stylesheet" media="screen">
+		<link href="../static/vendor/css/owl.carousel.css" rel="stylesheet" media="screen">
+		<link href="../static/vendor/css/flexslider.css" rel="stylesheet" media="screen">
+		<link href="../static/vendor/css/fancySelect.css" rel="stylesheet" media="screen">
+		<link href="../static/vendor/css/responsive.css" rel="stylesheet" media="screen">
+	    <link href="../static/css/style.css" rel="stylesheet">
+
+		<!--== Google Fonts ==-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<header id="header">
+			<div id="menu" class="header-menu fixed">
+				<div class="box">
+					<div class="row">
+						<nav role="navigation" class="col-sm-12">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+								<!--== Logo ==-->
+								<span class="navbar-brand logo">
+									Evento
+								</span>
+
+							</div>
+							<div class="navbar-collapse collapse">
+
+								<!--== Navigation Menu ==-->
+								<ul class="nav navbar-nav">
+
+									<li><a href="/sthome">HOME</a></li>
+									<li><a href="/vieweprofile">PROFILE</a></li>
+									<li><a href="/evlist">EVENTS</a></li>
+									<li><a href="/logout">LOGOUT</a></li>
+
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<!--== Site Description ==-->
+			<div class="header-cta">
+				<div class="container">
+					<div class="row">
+						<div class="entry-content">
+				            <p><span class="start-text"><b>From THE MARCH 7, 2014</b></span></p>
+				            <h4 class="entry-title"><a href="#">Organizing World class events</a></h4>
+				            <h5><span><b>Schrodinger confirms that Germany international ...</b></span></h5>
+					    </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bg">
+				<div id="preloader">
+					<div class="preloader"></div>
+				</div>
+
+				<div class="main-slider" id="main-slider">
+
+					<!--== Main Slider ==-->
+					<ul class="slides">
+						<li><img src="../static/images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>
+						<li><img src="../static/images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>
+					</ul>
+
+				</div>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="container box">
+
+
+				<!--===============================-->
+				<!--== About us ===================-->
+				<!--===============================-->
+				<!--==========-->
+
+				<section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100" style="background-color:e6e6e6">
+                  <center>   {% block body %}
+					           {% endblock %}  </center>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+  </main><!-- End #main -->
+
+
+
+
+
+
+
+
+				<!--===============================-->
+				<!--== Schedule ===================-->
+				<!--===============================-->
+
+
+
+				<!--===============================-->
+				<!--== Blog =============-->
+				<!--===============================-->
+
+				<!--==========-->
+				<!--===============================-->
+				<!--== Pricing Tables =============-->
+				<!--===============================-->
+
+
+				<!--==========-->
+
+				<!--==========-->
+				<!--===============================-->
+				<!--== Team =============-->
+				<!--===============================-->
+
+
+		<!--== Javascript Files ==-->
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="../static/vendor/js/jquery-2.1.0.min.js"></script>
+		<script src="../static/vendor/js/bootstrap.min.js"></script>
+		<script src="../static/vendor/js/jquery.scrollTo.js"></script>
+		<script src="../static/vendor/js/jquery.nav.js"></script>
+		<script src="../static/vendor/js/jquery.flexslider.js"></script>
+		<script src="../static/vendor/js/jquery.accordion.js"></script>
+		<script src="../static/vendor/js/jquery.placeholder.js"></script>
+		<script src="../static/vendor/js/jquery.fitvids.js"></script>
+		<script src="../static/vendor/js/gmap3.js"></script>
+		<script src="../static/vendor/js/fancySelect.js"></script>
+		<script src="../static/vendor/js/owl.carousel.min.js"></script>
+		<script src="../static/vendor/js/main.js"></script>
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+
+		  $("#testimonial-container").owlCarousel({
+
+		      navigation : false, // Show next and prev buttons
+		      slideSpeed : 700,
+		      paginationSpeed : 400,
+		      singleItem:true,
+		  });
+
+		});
+		</script>
+         <script src="../static/js/main.js"></script>
+	</body>
+</html>

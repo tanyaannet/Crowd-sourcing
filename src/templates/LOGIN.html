@@ -1,0 +1,75 @@
+<!--<html>-->
+<!--<head></head>-->
+{% extends 'home.html' %}
+{% block body %}
+
+<style>
+  .button {
+  background-color: #009970;;
+  padding: 12px 28px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  }
+  .button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .tables {
+  border:1px solid #ddd;
+  border-collapse: collapse;
+
+}
+
+.tables td, .tables th {
+  border:none;
+  padding: 15px;
+}
+
+.tables th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #009970;
+  color: white;
+}
+</style>
+
+
+
+
+
+	<form name="form1" method="post" action="/logincode">
+
+       <div align="center">
+  <p>&nbsp;</p>
+  <p><strong><h1>LOGIN</h1></strong></p>
+  <p>&nbsp;</p>
+<div style="overflow-x:auto;">
+    <p></p>
+
+        <center>
+    <table border="2" class="tables">
+        <tbody>
+    <tr>
+      <td>USER NAME</td>
+        <td><label for="textfield"></label>&nbsp;&nbsp;
+      <input type="text" name="textfield"   required/></td>
+    </tr>
+    <tr>
+      <td>PASSWORD</td>
+      <td><input type="password" name="password" id="password"  required/></td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" id="submit" value="Login" class="button"></td>
+    </tr>
+  </tbody>
+		  
+</table>
+</center>
+</form>
+</div>
+</div>
+{% endblock %}
+<!--	</html>-->

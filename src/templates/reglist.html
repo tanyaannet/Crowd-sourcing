@@ -1,0 +1,73 @@
+<!--<html>-->
+<!--<head></head>-->
+
+{% extends 'homea.html' %}
+{% block body %}
+
+<style>
+  .button {
+  background-color: #009970;;
+  padding: 12px 28px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  }
+  .button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .tables {
+  border:1px solid #ddd;
+  border-collapse: collapse;
+
+}
+
+.tables td, .tables th {
+  border:none;
+  padding: 15px;
+  color:#000000;
+}
+
+.tables th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#ADDFFF;
+  color:#000000;
+}
+</style>
+
+
+
+<center>
+    <div align="center">
+  <p>&nbsp;</p>
+  <p><strong><h1>EVENTS</h1></strong></p>
+  <p>&nbsp;</p>
+<div style="overflow-x:auto;">
+    <p></p>
+    <table border="2" class="tables">
+        <tbody>
+    <tr>
+      <th>EVENT NAME</th>
+      <th>&nbsp;MORE DETAILS</th>
+    </tr>
+    {%for i in value%}
+    <tr>
+      <td>{{i[0]}}</td>
+      <td><a href="/regdel?id={{i[1]}}" class="linkbutton">VIEW MORE</a></td>
+    {%endfor%}
+    </tr>
+    <tr>
+
+    </tr>
+  </tbody>
+
+</table>
+</center>
+</form>
+</div>
+</div>
+{% endblock %}
+<!--	</html>-->

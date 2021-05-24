@@ -1,0 +1,70 @@
+<!--<html>-->
+<!--<head></head>-->
+<!--<body>-->
+{% extends 'home.html' %}
+{% block body %}
+
+<style>
+
+
+.tables {
+  border-collapse: collapse;
+  width: 100%;
+  align: center;
+}
+
+.tables td, .tables th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color:#000000;
+
+}
+
+.tables tr:nth-child(even){background-color: #f2f2f2;}
+
+.tables tr:hover {background-color: #ddd;}
+
+.tables th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#ADDFFF;
+  color:#000000;
+}
+</style>
+<center>
+<div align="center">
+  <p>&nbsp;</p>
+  <p><strong><h1>EVENTS LIST</h1></strong></p>
+  <p>&nbsp;</p>
+<div style="overflow-x:auto;">
+    <p></p>
+
+    <table class="tables">
+
+    <tr>
+        <th> EVENT NAME</th>
+        <th>&nbsp;DATE</th>
+        <th>&nbsp;MAX no</th>
+        <th>&nbsp;VENUE</th>
+        <th>&nbsp;LAST DATE</th>
+        <th>&nbsp;DESCRIPTION</th>
+    </tr>
+    {%for i in value%}
+    <tr>
+      <td>&nbsp;{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+        <td>{{i[3]}}</td>
+        <td>{{i[4]}}</td>
+        <td>{{i[5]}}</td>
+        <td>{{i[6]}}</td>
+    </tr>
+     {%endfor%}
+</table>
+</div>
+</div>
+    </center>
+
+{% endblock %}
+<!--</body>-->
+<!--	</html>-->
