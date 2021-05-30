@@ -1,1 +1,1 @@
-web: gunicorn --chdir src event:app
+web: gunicorn --pythonpath src event:app
