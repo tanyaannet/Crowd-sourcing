@@ -7,6 +7,8 @@ THIS PROJECT ALLOWS ADMIN TO HOST A EVENT AND USERS TO CREATE A PROFILE,VIEW EVE
 3. NISHAD ALI [https://github.com/nishad45]
 ## Team Id
 BFH/reckj9uVlG9rvb8RL/2021
+## LIVE LINK TO THE PORTAL
+   https://event-web-portal.herokuapp.com/
 ## Link to product walkthrough
 [ https://www.loom.com/share/7adfd0ec3f424d4bbab255e5f6da02df]
 ## How it Works ?
