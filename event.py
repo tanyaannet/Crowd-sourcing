@@ -3,7 +3,7 @@ import pymysql
 
 from werkzeug.utils import secure_filename
 
-con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
 cmd = con.cursor()
 
 app = Flask(__name__)
@@ -21,7 +21,7 @@ def logout():
 
 @app.route('/logincode', methods=['post'])
 def logincode():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     name = request.form['textfield']
     passward = request.form['password']
@@ -49,14 +49,14 @@ def logincode():
 
 @app.route('/')
 def home():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     return render_template('home.html')
 
 
 @app.route('/vieweprofile')
 def vieweprofile():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+   con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     if 'lid' in session:
       comid =session['lid']
@@ -73,13 +73,13 @@ def vieweprofile():
 
 @app.route('/event')
 def event():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     return render_template('event.html')
 
 @app.route('/viewevent')
 def viewevent():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     cmd.execute("SELECT * FROM EVENT")
     result = cmd.fetchall()
@@ -87,7 +87,7 @@ def viewevent():
 
 @app.route('/evlist')
 def evlist():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     if 'lid' in session:
       lid = session['lid']
@@ -100,7 +100,7 @@ def evlist():
 
 @app.route('/evntreg')
 def evntreg():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     if 'lid' in session:
       comid = request.args.get('id')
@@ -113,7 +113,7 @@ def evntreg():
 
 @app.route('/ereg', methods=['post'])
 def ereg():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     if 'lid' in session:
       lid = session['lid']
@@ -147,7 +147,7 @@ def regstudent():
 
 @app.route('/adhome')
 def adhome():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     if 'lid' in session:
       return render_template('homea.html')
@@ -156,7 +156,7 @@ def adhome():
 @app.route('/sthome')
 def sthome():
     if 'lid' in session:
-      con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+      con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
       cmd = con.cursor()
       return render_template('homes.html')
     else:
@@ -165,7 +165,7 @@ def sthome():
 @app.route('/eadd')
 def eadd():
     if 'lid' in session:
-      con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+      con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
       cmd = con.cursor()
       return render_template('event add.html')
     else:
@@ -173,7 +173,7 @@ def eadd():
 
 @app.route('/reglist')
 def reglist():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     if 'lid' in session:
       cmd.execute("SELECT ename,eid FROM EVENT WHERE eid  IN(SELECT eid FROM ereg )")
@@ -184,7 +184,7 @@ def reglist():
 
 @app.route('/regdel')
 def regdel():
-    con = pymysql.connect(host='localhost', user='root', password='', port=3306, db='event')
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com', user='b8c0d80cea7271', password='74c65321', port=3306, db='heroku_cabcbdb59881d5c')
     cmd = con.cursor()
     if 'lid' in session:
       comid = request.args.get('id')
