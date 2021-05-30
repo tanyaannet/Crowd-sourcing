@@ -16,7 +16,24 @@ BFH/reckj9uVlG9rvb8RL/2021
 4. in user profile events can be viewed and registered accordingly
 5. in admin profile event can be created and can list the partcipants registered for the event 
 ## Libraries used
+certifi==2020.12.5
+chardet==4.0.0
+click==8.0.1
+colorama==0.4.4
+coverage==5.5
+docopt==0.6.2
 Flask==2.0.0
+gunicorn==20.1.0
+idna==2.10
+itsdangerous==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+pipreqs==0.4.10
+PyMySQL==1.0.2
+requests==2.25.1
+urllib3==1.26.5
+Werkzeug==2.0.1
+yarg==0.1.9
 ## Package Desciption
 main:Contains the main routes
 static:Contains the css and javascript file along with some images
