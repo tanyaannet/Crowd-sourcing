@@ -27,17 +27,18 @@ def logincode():
     passward = request.form['password']
     cmd.execute("SELECT * FROM login WHERE username= '"+name+"' and  password='"+passward+"'")
     result = cmd.fetchone()
-    if result is None:
-         return '''<script>alert("INVALID USERNAME OR PASSWORD");window.location='/'</script>'''
-    else:
-         lid = result[0]
-         session['lid'] = lid
-         type = result[3]
-         if type == 'admin':
-            return render_template('homea.html')
-         elif type == 'student':
-            return render_template('homes.html')
-         else:
+    return render_template('homes.html')
+#     if result is None:
+#          return '''<script>alert("INVALID USERNAME OR PASSWORD");window.location='/'</script>'''
+#     else:
+#          lid = result[0]
+#          session['lid'] = lid
+#          type = result[3]
+#          if type == 'admin':
+#             return render_template('homea.html')
+#          elif type == 'student':
+#             return render_template('homes.html')
+#          else:
             return '''<script> alert("Invalid Id or Password");window.location='/' </script>'''
 
 
