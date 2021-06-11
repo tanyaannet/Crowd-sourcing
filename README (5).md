@@ -1,12 +1,7 @@
 ![BFH Banner](https://trello-attachments.s3.amazonaws.com/542e9c6316504d5797afbfb9/542e9c6316504d5797afbfc1/39dee8d993841943b5723510ce663233/Frame_19.png)
 # EVENTO- EVENT PORTAL
 THIS PROJECT ALLOWS ADMIN TO HOST A EVENT AND USERS TO CREATE A PROFILE,VIEW EVENTS AND REGISTER FOR THEM.
-## Team members
-1. TANYA ANNET [https://github.com/tanyaannet]
-2. HAMID ZIYAN[https://github.com/hamidziyan]
-3. NISHAD ALI [https://github.com/nishad45]
-## Team Id
-BFH/reckj9uVlG9rvb8RL/2021
+
 ## LIVE LINK TO THE PORTAL
    https://event-web-portal.herokuapp.com/
 ## Link to product walkthrough
